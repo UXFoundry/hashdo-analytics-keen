@@ -3,15 +3,27 @@
 This is a analytics implementation plugin for sending [\#Do](https://github.com/UXFoundry/hashdo) data to [Keen IO](https://keen.io/).
 
 ## Getting Started
-TODO
+To make use of Keen IO for analytics in a [\#Do](https://github.com/UXFoundry/hashdo) project, you simply replace the built-in `analytics` object property with this implementation.
+
+```js
+var hashdo = require('hashdo');
+
+// Use the Keen IO analytics plugin.
+hashdo.analytics = require('hashdo-analytics-keen');
+
+// Using the hashdo-web project?
+var hashdoweb = require('hashdo-web');
+
+hashdoweb.hashdo.analytics = require('hashdo-analytics-keen');
+```
 
 ## Environment Variables
 To successfully send data to Keen IO, the following environment variables must be set.
 
-### `KEEN_PROJECT_ID`
+#### `KEEN_PROJECT_ID`
 The project ID can be found on the selected [Keen IO](https://keen.io/) project page.
 
-### `KEEN_WRITE_KEY`
+#### `KEEN_WRITE_KEY`
 The write key can be found on the selected [Keen IO](https://keen.io/) project page by clicking on the "Show API Keys" button.
 
 ## License

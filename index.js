@@ -1,4 +1,17 @@
 /**
+ * Validation
+ *
+ * @ignore
+ */
+if (!process.env.KEEN_PROJECT_ID) {
+  throw new Error('KEEN_PROJECT_ID environment variable has not been set.');
+}
+
+if (!process.env.KEEN_WRITE_KEY) {
+  throw new Error('KEEN_WRITE_KEY environment variable has not been set.');
+}
+
+/**
  * Requires
  *
  * @ignore
@@ -25,7 +38,7 @@ module.exports = {
 
       Client.addEvent(key, data, function (err, res) {
         if (err) {
-          console.error('ANALYTICS: Add Event error.', err);
+          console.error('ANALYTICS-KEEN: Add Event error.', err);
         }
 
         callback && callback(err, res);
