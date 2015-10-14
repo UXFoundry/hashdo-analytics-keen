@@ -20,9 +20,9 @@
     "keen-js": "3.2.7"
   },
   "devDependencies": {
-    "del": "1.2.1",
+    "del": "2.0.2",
     "gulp": "gulpjs/gulp#4.0",
-    "gulp-bump": "0.3.1",
+    "gulp-bump": "1.0.0",
     "gulp-doxx": "0.0.5",
     "gulp-jsbeautifier": "1.0.1",
     "gulp-jshint": "1.11.2",
