@@ -27,10 +27,8 @@ gulp.task('bump', function () {
 });
 
 // del build
-gulp.task('clean', function (cb) {
-  require('del').bind(null, [BUILD_PATH]);
-  
-  return cb();
+gulp.task('clean', function () {
+  return require('del')(BUILD_PATH);
 });
 
 // build documentation
