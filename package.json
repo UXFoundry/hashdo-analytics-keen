@@ -1,7 +1,7 @@
 {
   "name": "hashdo-analytics-keen",
   "description": "#Do analytics implementation to send events to Keen IO.",
-  "version": "0.1.62",
+  "version": "0.1.63",
   "author": "HashDo <info@hashdo.com>",
   "license": "Apache-2.0",
   "keywords": [
@@ -17,7 +17,7 @@
     "url": "https://github.com/UXFoundry/hashdo-analytics-keen/issues"
   },
   "dependencies": {
-    "keen-js": "3.4.0"
+    "keen-js": "3.4.1"
   },
   "devDependencies": {
     "del": "2.2.0",
@@ -25,9 +25,9 @@
     "gulp-bump": "2.1.0",
     "gulp-doxx": "0.0.5",
     "gulp-jsbeautifier": "2.0.3",
-    "gulp-jshint": "2.0.0",
-    "gulp-load-plugins": "1.2.2",
-    "gulp-watch": "4.3.5",
+    "gulp-jshint": "2.0.1",
+    "gulp-load-plugins": "1.2.3",
+    "gulp-watch": "4.3.6",
     "jshint": "2.9.2",
     "jshint-stylish": "2.2.0"
   },
